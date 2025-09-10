@@ -1,4 +1,4 @@
-# 🚁 Drone Flight Time Calculator v1.0
+# 🚁 Drone Flight Time Calculator
 
 The **Drone Flight Time Calculator** is a simple and intuitive desktop application built with Python and Tkinter.  
 It helps drone hobbyists, pilots, and builders quickly estimate flight time based on key aircraft specifications.
