@@ -1,7 +1,7 @@
 capacity=eval(input("Enter capacity - "))
 discharge=80
 AUW=eval(input("Enter weight - "))
-power=eval(input("Enter power in watts/kg - "))
+power=eval(input("Enter power in kg/watts - "))
 voltage=eval(input("Enter voltage - "))
 AAD=AUW*power/voltage
 time=capacity*discharge/AAD
