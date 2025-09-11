@@ -100,9 +100,7 @@ class DroneCalculatorApp(tk.Tk):
             voltage = float(self.voltage_var.get())
 
             # --- Constants ---
-            # Using 80% of battery capacity for safety and battery longevity.
-            # Your script used '80', which is treated here as a percentage.
-            DISCHARGE_FACTOR = 80  # Corrected to be a decimal for calculation
+            DISCHARGE_FACTOR = 80
 
             # --- Calculations based on standard formulas ---
             total_power_draw = auw * power  # Total power in watts
@@ -110,7 +108,6 @@ class DroneCalculatorApp(tk.Tk):
 
             # Formula for Time
             # time (hours) = usable capacity (Ah) / amp draw (A)
-            # We convert capacity from mAh to Ah by dividing by 1000.
             usable_capacity_ah = (capacity / 1000) * DISCHARGE_FACTOR
             time_minutes = usable_capacity_ah / aad
 
