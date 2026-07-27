@@ -108,8 +108,8 @@ class DroneCalculatorApp(tk.Tk):
 
             # Formula for Time
             # time (hours) = usable capacity (Ah) / amp draw (A)
-            usable_capacity_ah = (capacity / 1000) * DISCHARGE_FACTOR
-            time_minutes = usable_capacity_ah / aad
+            usable_capacity_ah = (capacity / 100000) * DISCHARGE_FACTOR
+            time_minutes = (usable_capacity_ah / aad) * 60  # Convert hours to minutes
 
             self.result_var.set(f"{time_minutes:.2f}")
             self.amp_draw_var.set(f"{aad:.2f}")
